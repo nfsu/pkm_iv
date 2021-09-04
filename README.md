@@ -1,2 +1,2 @@
-# pkm_hgss
-File formats and enums used by PKM HGSS
+# pkm_iv
+File formats and enums used by PKM Gen IV
