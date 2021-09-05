@@ -28,7 +28,7 @@ namespace pkm {
 			return p8[0] >= u8(species.gender);
 		}
 
-		inline bool hasDualAbility() const {
+		inline bool hasSecondSpeciesAbility() const {
 			return personality & 1;
 		}
 
