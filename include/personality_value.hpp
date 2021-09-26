@@ -2,7 +2,7 @@
 #include "creature_enums.hpp"
 #include "species.hpp"
 
-namespace pkm {
+namespace pkm_iv {
 
 	using u8x2x4 = Array<Array<u8, 2>, 4>;
 	using u16x4 = Array<u16, 4>;

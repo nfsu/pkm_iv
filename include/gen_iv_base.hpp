@@ -1,7 +1,7 @@
 #pragma once
 #include "ntypes.hpp"
 
-namespace pkm {
+namespace pkm_iv {
 
 	enum class LanguageId : u8 {
 		Undefined,
@@ -67,7 +67,7 @@ namespace pkm {
 	using BallId = u8;
 	using BallExtId = u8;
 
-	using AbilityId = u8;		//Up to 162
+	using AbilityId = u8;		//Up to 123
 
 	using PtLocationId = u16;
 	using DPLocationId = u16;

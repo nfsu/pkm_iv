@@ -1,6 +1,6 @@
 #pragma once
 
-namespace pkm {
+namespace pkm_iv {
 
 	enum class Ribbons0 : u32 {
 

@@ -1,6 +1,6 @@
 #include "species.hpp"
 
-namespace pkm {
+namespace pkm_iv {
 
     String SpeciesHelper::toString(SpeciesId id) {
         

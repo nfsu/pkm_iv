@@ -3,7 +3,7 @@
 #include "item.hpp"
 #include "gen_iv_base.hpp"
 
-namespace pkm {
+namespace pkm_iv {
 
     enum class SpeciesEffortYield: u16 {
         Hp = 3,
@@ -69,7 +69,7 @@ namespace pkm {
         SpeciesColorAndFlip colorAndFlip;
         u16 padding;
         
-        u8 moves[(u8(MoveId::Count) + 7) >> 3];
+        u8 moves[(u8(MoveId::TMHMCount) + 7) >> 3];
         u8 pad[3];	//Always 00 00 00
 
         inline bool notMaleOnly() const {

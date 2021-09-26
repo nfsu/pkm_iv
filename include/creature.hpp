@@ -1,7 +1,7 @@
 #pragma once
 #include "creature_headers.hpp"
 
-namespace pkm {
+namespace pkm_iv {
 
 	//A helper for all headers combined
 

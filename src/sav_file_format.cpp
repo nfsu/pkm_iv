@@ -2,7 +2,7 @@
 
 //Some validation
 
-namespace pkm {
+namespace pkm_iv {
 	static_assert(offsetof(SavFile, adventureStart) == 0x34);
 	static_assert(offsetof(SavFile, champDate) == 0x3C);
 	static_assert(offsetof(SavFile, trainerName) == 0x64);

@@ -1,7 +1,7 @@
 #pragma once
 #include "ntypes.hpp"
 
-namespace pkm {
+namespace pkm_iv {
 	using ItemId = u16;
 	using CapsuleId = u8;
 }

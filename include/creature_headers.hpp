@@ -6,7 +6,7 @@
 #include "personality_value.hpp"
 #include "creature_forms.hpp"
 
-namespace pkm {
+namespace pkm_iv {
 
 	struct CreatureHeader : PersonalityValue {
 
@@ -41,14 +41,7 @@ namespace pkm {
 		LanguageId originLanguage;
 
 		CreatureStats<u8> effort;
-
-		union {
-			u8 contest[usz(CreatureContestStat::Count)];
-			struct {
-				u8 cool, beauty, cute;
-				u8 smart, tough, sheen;
-			};
-		};
+		CreatureContestStats contest;
 
 		Ribbons1 ribbons1;
 	};

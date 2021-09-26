@@ -2,8 +2,9 @@
 #include "gen_iv_base.hpp"
 #include "item.hpp"
 #include "creature.hpp"
+#include "txt.hpp"
 
-namespace pkm {
+namespace pkm_iv {
 
 	//Thanks to PPRE for their spec
 	//Also thanks to PKHeX for a more clear example
@@ -194,10 +195,8 @@ namespace pkm {
 		return SecondsSince2000(t - unixEpoch2000);
 	}
 
-	WString stringifyEncoded(const u16 *ptr, usz N);
-
 	template<usz N>
 	inline WString stringifyEncoded(const u16 (&name)[N]) {
-		return stringifyEncoded(name, N);
+		return Txt::stringifyEncoded(name, N);
 	}
 }

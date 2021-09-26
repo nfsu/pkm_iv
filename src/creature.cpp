@@ -1,7 +1,7 @@
 #include "creature.hpp"
 #include "compression_helper.hpp"
 
-namespace pkm {
+namespace pkm_iv {
 
 	static constexpr u16 blockOrder[] = {
 		00123, 00132, 00213, 00231, 00312, 00321,

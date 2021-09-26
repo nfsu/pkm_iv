@@ -1,7 +1,7 @@
 #pragma once
 #include "ntypes.hpp"
 
-namespace pkm {
+namespace pkm_iv {
 
 	enum class TypeId : u8 {
 		Normal, Fight, Flying, Poison,
@@ -39,6 +39,14 @@ namespace pkm {
 		Count
 	};
 
+	union CreatureContestStats {
+		u8 contest[usz(CreatureContestStat::Count)];
+		struct {
+			u8 cool, beauty, cute;
+			u8 smart, tough, sheen;
+		};
+	};
+
 	enum class CreatureEffects : u8 {
 		None,
 		AsleepRounds	= 7,
@@ -47,6 +55,19 @@ namespace pkm {
 		Frozen			= 1 << 5,
 		Paralyzed		= 1 << 6,
 		Toxic			= 1 << 7
+	};
+	
+	enum class MoveId : u16 {
+	
+		First = 0,                              //TM01
+		
+		TMCount = 92,
+		HMCount = 8,
+		
+		TMStart = First,
+		HMStart = First + TMCount,
+		TMHMCount = HMStart + HMCount,
+		Mask = 31
 	};
 
 	enum class CreatureMarkingId : u8 {
@@ -117,18 +138,7 @@ namespace pkm {
 		Calm, Gentle, Sassy, Careful,
 		Quirky, 
 
-		Count
-	};
-
-	enum class MoveId : u16 {
-
-		First = 0,				//TM01
-
-		TMCount = 92,
-		HMCount = 8,
-
-		TMStart = First,
-		HMStart = First + TMCount,
-		Count = HMStart + HMCount,
+		Count,
+		Mask = 31
 	};
 }

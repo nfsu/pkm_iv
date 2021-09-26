@@ -1,7 +1,7 @@
 #pragma once
 #include "ntypes.hpp"
 
-namespace pkm {
+namespace pkm_iv {
 
 	template<usz v>
 	struct CreatureFormBase { static constexpr u16 id = u16(v); };
